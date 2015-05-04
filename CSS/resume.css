@@ -3,19 +3,95 @@
 @import url(http://fonts.googleapis.com/css?family=Hind:400,700|Bree+Serif);
 
 body {
-  background: url("../img/texture.jpg");
+  background: url("../img/fog.jpeg");
   font-family: "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #222;
+  margin: 0;
+  padding: 0;
 }
 
 #container {
+  position: relative;
   margin: 0 auto;
   width: 960px;
   border: 1px solid #222;
   padding: 20px;
-  background: #fff;
+  background: rgba(255,255,255,0.6);
+  overflow: auto;
+}
+
+.print {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+}
+
+header {
+  margin-top: 60px;
+}
+
+nav {
+  z-index: 10;
+  background: #eee;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  border-right: 1px solid #ccc;
+  margin-right: 2em;
+  padding-right: 2em;
+}
+
+nav ul li:last-child {
+  border: 0;
+}
+
+nav ul li:first-child {
+
+}
+
+#contact {
+  font-family: 'Hind', sans-serif;
+  text-align: center;
+  margin-bottom: .1in;
+}
+
+#aboutme p {
+  line-height: 1.2;
+  font-size: 12pt;
+}
+
+#aboutme p:nth-child(3) {
+  font-weight: bold;
+}
+
+#aboutme ul li {
+  line-height: 1.2;
+  font-style: italic;
+}
+
+#portfolio img {
+  float: left;
+}
+
+#portfolio article {
+  clear: both;
 }
 
 h1 {
@@ -25,19 +101,6 @@ h1 {
   margin-bottom: .1in;
   font-weight: 700;
   font-size: 50pt;
-}
-
-#contact {
-  font-family: 'Hind', sans-serif;
-  text-align: center;
-  margin-bottom: .1in;
-}
-
-nav {
-  list-style: none;
-  margin:0;
-  padding:0;
-  text-align: center;
 }
 
 nav ul li {
@@ -61,7 +124,7 @@ h3 {
 h4 {
   margin-top: 0in;
   margin-bottom: .1in;
-  margin-left: .1in;
+  margin-left: 0;
   font-weight: 200;
   font-size: 15pt;
 }
@@ -70,7 +133,7 @@ p {
   line-height: .5;
   margin-top: .2in;
   margin-bottom: .1in;
-  margin-left: .2in;
+  margin-left: 0in;
   font-size: 12pt;
 }
 
@@ -82,7 +145,13 @@ img {
   padding: 5px;
 }
 
-a,
+#portfolio img {
+  border: 1px solid #222;
+  height: 2.5in;
+  margin: 10px;
+  padding: 5px;
+}
+
 a:visited {
   color: rgb(25,95,155);
 }
@@ -94,7 +163,6 @@ a:hover {
 li {
   margin-bottom: .1in;
 }
-
 
 abbr {
   border-bottom-width:1px;

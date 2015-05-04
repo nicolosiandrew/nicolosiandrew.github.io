@@ -11,10 +11,6 @@
   margin: 0.5in;
 }
 
-#contact {
-  text-align: center;
-}
-
 nav {
   display: none;
 }
@@ -46,4 +42,8 @@ a {
 
 footer {
   display: none
+}
+
+.print {
+  display: none;
 }
