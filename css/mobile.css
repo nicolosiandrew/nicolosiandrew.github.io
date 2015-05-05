@@ -140,7 +140,7 @@ img {
   padding: 0;
 }
 
-h2:nth-child(1) {
+#portfolio h2:nth-child(1) {
   display: none;
 }
 
