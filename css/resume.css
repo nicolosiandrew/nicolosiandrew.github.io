@@ -62,10 +62,6 @@ nav ul li:last-child {
   border: 0;
 }
 
-nav ul li:first-child {
-
-}
-
 #contact {
   font-family: 'Hind', sans-serif;
   text-align: center;
@@ -109,32 +105,37 @@ nav ul li {
 }
 
 h2 {
-  margin-top: .5in;
-  font-weight: 1000;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: 800;
   font-size: 30pt;
 }
 
 h3 {
-  margin-top: .4in;
-  margin-bottom: .05in;
+  margin-top: 7px;
+  margin-bottom: 5px;
   font-weight: 500;
   font-size: 20pt;
 }
 
 h4 {
   margin-top: 0in;
-  margin-bottom: .1in;
+  margin-bottom: 0px;
   margin-left: 0;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 15pt;
 }
 
 p {
-  line-height: .5;
-  margin-top: .2in;
+  line-height: 15px;
+  margin-top: 10px;
   margin-bottom: .1in;
   margin-left: 0in;
   font-size: 12pt;
+}
+
+p:last-child {
+  margin-bottom:20px;
 }
 
 img {
@@ -147,9 +148,9 @@ img {
 
 #portfolio img {
   border: 1px solid #222;
-  height: 2.5in;
+  height: 4in;
   margin: 10px;
-  padding: 5px;
+  padding: 0;
 }
 
 a:visited {
@@ -161,7 +162,7 @@ a:hover {
 }
 
 li {
-  margin-bottom: .1in;
+  margin-bottom: 5px;
 }
 
 abbr {
@@ -171,6 +172,5 @@ abbr {
 }
 
 footer {
-  text-align: right;
-  margin: .3in;
+  margin: 30px;
 }
